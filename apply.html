@@ -94,7 +94,7 @@
     <!-- 区分 -->
     <div class="sec">
       <h2>お申し込み区分</h2>
-      <div class="desc">「会社の費用で参加」＝法人 ／「自己負担で参加」＝個人</div>
+      <div class="desc">最終的に費用を負担するのが「会社」か「自分」かで選んでください。立て替えて会社で精算する場合も<b>法人（会社費用）</b>です。</div>
       <div class="field">
         <div class="opts">
           <label class="opt"><input type="radio" name="kubun" value="法人（会社費用）" required onchange="toggleKubun()"><span>法人（会社の費用で参加）／ <b>40,000円</b></span></label>
@@ -106,13 +106,14 @@
       <div class="branch" id="corpBlock">
         <div class="field"><label class="q">会社名・団体名</label><input type="text" name="company"></div>
         <div class="field"><label class="q">部署名</label><input type="text" name="dept"></div>
-        <div class="field"><label class="q">請求書の発行</label>
+        <div class="field"><label class="q">必要な書類</label>
           <div class="opts">
-            <label class="opt"><input type="radio" name="invoice" value="必要"><span>請求書が必要</span></label>
+            <label class="opt"><input type="radio" name="invoice" value="請求書"><span>請求書</span></label>
+            <label class="opt"><input type="radio" name="invoice" value="領収書（立替・経費精算）"><span>領収書（本人が立て替えて経費精算する場合）</span></label>
             <label class="opt"><input type="radio" name="invoice" value="不要"><span>不要</span></label>
           </div>
         </div>
-        <div class="field"><label class="q">請求書の宛名（ご希望の表記）</label><input type="text" name="invoice_name"></div>
+        <div class="field"><label class="q">書類の宛名（ご希望の表記）</label><input type="text" name="invoice_name"><div class="hint">会社名・部署名、または個人名。立替精算で会社名の領収書が必要な方もこちらに。</div></div>
         <div class="field"><label class="q">お支払い方法</label>
           <div class="opts">
             <label class="opt"><input type="radio" name="pay_corp" value="請求書払い（後日銀行振込）"><span>請求書払い（後日、銀行振込）</span></label>
