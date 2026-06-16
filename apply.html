@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>お申し込み｜AI×対話型組織開発 1日ワークショップ｜Oxymoron × 田原真人</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16161d;--ink-soft:#2a2a33;--cream:#f7f4ee;--cream-2:#efe9df;
+    --paper:#fdfcfa;--accent:#b5613f;--accent-deep:#8f4226;
+    --line:rgba(0,0,0,.14);--muted:#6b6b73;
+    --serif:'Shippori Mincho',serif;--sans:'Noto Sans JP',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.85;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent)}
+  .back{display:inline-block;padding:18px 6vw 0;font-size:.8rem;color:var(--muted);text-decoration:none;letter-spacing:.08em}
+  .back:hover{color:var(--accent)}
+
+  header.top{background:radial-gradient(120% 120% at 72% 8%,#20202b 0%,var(--ink) 60%,#0e0e14 100%);color:var(--cream);padding:40px 6vw 46px}
+  header.top .inner{max-width:720px;margin:0 auto}
+  header.top .kicker{font-size:.72rem;letter-spacing:.3em;color:var(--accent);margin-bottom:14px}
+  header.top h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.5rem,4.2vw,2.1rem);line-height:1.5;color:#fbf8f2}
+  header.top .price{margin-top:18px;font-size:.95rem;color:rgba(247,244,238,.85);line-height:1.9}
+  header.top .price b{color:#fbf8f2}
+  header.top .mon{margin-top:10px;font-size:.82rem;color:rgba(247,244,238,.6)}
+
+  main{max-width:720px;margin:0 auto;padding:46px 6vw 90px}
+  .sec{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 26px;margin-bottom:22px}
+  .sec h2{font-family:var(--serif);font-weight:600;font-size:1.18rem;letter-spacing:.03em;margin-bottom:6px;color:var(--ink)}
+  .sec .desc{font-size:.86rem;color:var(--muted);margin-bottom:18px}
+  .field{margin-bottom:20px}
+  .field:last-child{margin-bottom:0}
+  label.q{display:block;font-weight:600;font-size:.95rem;margin-bottom:9px}
+  label.q .req{color:var(--accent);font-size:.78rem;margin-left:7px;font-weight:500}
+  input[type=text],input[type=email],input[type=tel],textarea,select{
+    width:100%;font-family:var(--sans);font-size:1rem;color:var(--ink);background:#fff;
+    border:1px solid var(--line);border-radius:9px;padding:12px 14px;transition:border-color .2s}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--accent)}
+  textarea{min-height:96px;resize:vertical;line-height:1.7}
+  .opts{display:flex;flex-direction:column;gap:9px}
+  .opt{display:flex;align-items:flex-start;gap:10px;font-size:.95rem;line-height:1.55;cursor:pointer}
+  .opt input{margin-top:5px;flex:0 0 auto;accent-color:var(--accent);width:17px;height:17px}
+  .hint{font-size:.8rem;color:var(--muted);margin-top:7px}
+  .branch{display:none}
+  .branch.on{display:block}
+  .cond{background:var(--cream-2);border:1px solid var(--line);border-radius:11px;padding:18px 18px}
+  .cond .lead{font-size:.88rem;color:var(--ink-soft);margin-bottom:14px}
+
+  .submit{display:block;width:100%;background:var(--accent);color:#fff;border:none;font-family:var(--sans);
+    font-weight:600;font-size:1.05rem;letter-spacing:.06em;padding:17px;border-radius:999px;cursor:pointer;transition:background .25s,transform .25s;margin-top:8px}
+  .submit:hover{background:var(--accent-deep);transform:translateY(-2px)}
+  .submit:disabled{opacity:.55;cursor:not-allowed;transform:none}
+  .note{font-size:.78rem;color:var(--muted);text-align:center;margin-top:14px;line-height:1.8}
+
+  #thanks{display:none;text-align:center;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:48px 26px}
+  #thanks h2{font-family:var(--serif);font-size:1.4rem;color:var(--ink);margin-bottom:14px}
+  #thanks p{font-size:.95rem;color:var(--ink-soft);line-height:2}
+
+  footer{background:#0e0e14;color:rgba(247,244,238,.55);text-align:center;padding:40px 6vw;font-size:.8rem;letter-spacing:.06em}
+  footer .fb{font-family:var(--serif);font-size:1.05rem;color:#fbf8f2;letter-spacing:.16em;margin-bottom:8px}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">&larr; ワークショップの詳細にもどる</a>
+
+<header class="top">
+  <div class="inner">
+    <div class="kicker">APPLICATION ｜ お申し込み</div>
+    <h1>AI×対話型組織開発<br>1日ワークショップ</h1>
+    <div class="price">モニター価格（税込）：<br><b>法人 40,000円</b> ／ <b>個人 25,000円</b></div>
+    <div class="mon">少人数・定員20名／モニター開催のため、終了後のヒアリング等にご協力いただくことが参加条件です。</div>
+  </div>
+</header>
+
+<main>
+  <form id="applyForm">
+
+    <!-- 基本情報 -->
+    <div class="sec">
+      <h2>基本情報</h2>
+      <div class="field"><label class="q">お名前<span class="req">必須</span></label><input type="text" name="name" required></div>
+      <div class="field"><label class="q">お名前（ふりがな）</label><input type="text" name="kana"></div>
+      <div class="field"><label class="q">メールアドレス<span class="req">必須</span></label><input type="email" name="email" required><div class="hint">日程・参加リンク・各種ご連絡をお送りします。</div></div>
+      <div class="field"><label class="q">役職・職種</label><input type="text" name="role"></div>
+      <div class="field"><label class="q">携帯電話番号（当日の緊急連絡用）</label><input type="tel" name="tel"></div>
+    </div>
+
+    <!-- 区分 -->
+    <div class="sec">
+      <h2>お申し込み区分</h2>
+      <div class="desc">「会社の費用で参加」＝法人 ／「自己負担で参加」＝個人</div>
+      <div class="field">
+        <div class="opts">
+          <label class="opt"><input type="radio" name="kubun" value="法人（会社費用）" required onchange="toggleKubun()"><span>法人（会社の費用で参加）／ <b>40,000円</b></span></label>
+          <label class="opt"><input type="radio" name="kubun" value="個人（自己負担）" onchange="toggleKubun()"><span>個人（自己負担で参加）／ <b>25,000円</b></span></label>
+        </div>
+      </div>
+
+      <!-- 法人ブロック -->
+      <div class="branch" id="corpBlock">
+        <div class="field"><label class="q">会社名・団体名</label><input type="text" name="company"></div>
+        <div class="field"><label class="q">部署名</label><input type="text" name="dept"></div>
+        <div class="field"><label class="q">請求書の発行</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="invoice" value="必要"><span>請求書が必要</span></label>
+            <label class="opt"><input type="radio" name="invoice" value="不要"><span>不要</span></label>
+          </div>
+        </div>
+        <div class="field"><label class="q">請求書の宛名（ご希望の表記）</label><input type="text" name="invoice_name"></div>
+        <div class="field"><label class="q">お支払い方法</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="pay_corp" value="請求書払い（後日銀行振込）"><span>請求書払い（後日、銀行振込）</span></label>
+            <label class="opt"><input type="radio" name="pay_corp" value="事前銀行振込"><span>事前に銀行振込</span></label>
+            <label class="opt"><input type="radio" name="pay_corp" value="その他"><span>その他（備考に記入）</span></label>
+          </div>
+        </div>
+        <div class="field"><label class="q">適格請求書（インボイス／登録番号の記載）</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="invoice_qualified" value="必要"><span>必要</span></label>
+            <label class="opt"><input type="radio" name="invoice_qualified" value="不要"><span>不要</span></label>
+          </div>
+        </div>
+        <div class="field"><label class="q">請求に関する備考</label><textarea name="corp_note" placeholder="送付先メール・締め支払い条件など"></textarea></div>
+      </div>
+
+      <!-- 個人ブロック -->
+      <div class="branch" id="indivBlock">
+        <div class="field"><label class="q">領収書の発行</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="receipt" value="必要"><span>領収書が必要</span></label>
+            <label class="opt"><input type="radio" name="receipt" value="不要"><span>不要</span></label>
+          </div>
+        </div>
+        <div class="field"><label class="q">領収書の宛名（ご希望の表記）</label><input type="text" name="receipt_name"></div>
+        <div class="field"><label class="q">お支払い方法</label>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="pay_indiv" value="事前銀行振込"><span>事前に銀行振込</span></label>
+            <label class="opt"><input type="radio" name="pay_indiv" value="その他"><span>その他（備考に記入）</span></label>
+          </div>
+        </div>
+        <div class="field"><label class="q">お支払いに関する備考</label><textarea name="indiv_note"></textarea></div>
+      </div>
+    </div>
+
+    <!-- あなたについて -->
+    <div class="sec">
+      <h2>あなたについて</h2>
+      <div class="field"><label class="q">人材開発・組織開発・対話・ファシリテーションへの関わり<span class="req">必須</span></label>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="involvement" value="実務で深く関わっている" required><span>実務で深く関わっている</span></label>
+          <label class="opt"><input type="radio" name="involvement" value="関わっている"><span>関わっている</span></label>
+          <label class="opt"><input type="radio" name="involvement" value="関心はあるが実務ではない"><span>関心はあるが実務ではない</span></label>
+          <label class="opt"><input type="radio" name="involvement" value="これから関わりたい"><span>これから関わりたい</span></label>
+        </div>
+      </div>
+      <div class="field"><label class="q">いま現場で感じている課題<span class="req">必須</span></label><textarea name="issue" required placeholder="対話・合意形成・意思決定まわりで感じていること"></textarea></div>
+      <div class="field"><label class="q">AIの業務活用度<span class="req">必須</span></label>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="ai_usage" value="ほとんど使っていない" required><span>ほとんど使っていない</span></label>
+          <label class="opt"><input type="radio" name="ai_usage" value="たまに使う"><span>たまに使う</span></label>
+          <label class="opt"><input type="radio" name="ai_usage" value="日常的に使う"><span>日常的に使う</span></label>
+          <label class="opt"><input type="radio" name="ai_usage" value="チーム・組織で活用"><span>チーム・組織で活用している</span></label>
+        </div>
+      </div>
+      <div class="field"><label class="q">今後、関心のあるもの（複数選択可）</label>
+        <div class="opts">
+          <label class="opt"><input type="checkbox" name="interest" value="自社・自チームでの導入"><span>自社・自チームでの導入</span></label>
+          <label class="opt"><input type="checkbox" name="interest" value="1対1の個別相談（無料）"><span>1対1の個別相談（無料）</span></label>
+          <label class="opt"><input type="checkbox" name="interest" value="継続講座・伴走"><span>継続講座・伴走</span></label>
+          <label class="opt"><input type="checkbox" name="interest" value="いまは情報収集のみ"><span>いまは情報収集のみ</span></label>
+        </div>
+      </div>
+      <div class="field"><label class="q">この会をどこで知りましたか</label>
+        <select name="source">
+          <option value="">選択してください</option>
+          <option>立教LDCのつながり</option>
+          <option>田原さんの発信</option>
+          <option>OxymoronのSNS・note</option>
+          <option>紹介</option>
+          <option>その他</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- モニター条件 -->
+    <div class="sec">
+      <h2>モニター参加の条件</h2>
+      <div class="desc">モニター価格でのご提供にあたり、より良い場づくりと今後の改善のため、以下にご協力をお願いしています。</div>
+      <div class="cond">
+        <div class="lead">下記すべてに同意のうえ、申し込みます。<span class="req">必須</span></div>
+        <div class="opts">
+          <label class="opt"><input type="checkbox" name="consent" value="事後ヒアリングに協力" required><span>終了後の個別ヒアリング（オンライン30〜45分）に協力します</span></label>
+          <label class="opt"><input type="checkbox" name="consent" value="アンケートに回答" required><span>事前・事後のアンケートに回答します</span></label>
+          <label class="opt"><input type="checkbox" name="consent" value="記録の運営利用に同意" required><span>当日の記録（写真・スクリーンショット等）の運営利用に同意します</span></label>
+        </div>
+      </div>
+      <div class="field" style="margin-top:18px"><label class="q">感想・成果の広報利用について<span class="req">必須</span></label>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="publicity" value="実名でOK" required><span>実名で紹介してOK</span></label>
+          <label class="opt"><input type="radio" name="publicity" value="匿名ならOK"><span>匿名（肩書きのみ）ならOK</span></label>
+          <label class="opt"><input type="radio" name="publicity" value="利用しないでほしい"><span>利用しないでほしい</span></label>
+        </div>
+      </div>
+      <div class="field" style="margin-top:18px"><label class="q">ご質問・ご要望（任意）</label><textarea name="question"></textarea></div>
+    </div>
+
+    <button type="submit" class="submit" id="submitBtn">この内容で申し込む</button>
+    <div class="note">送信後、確認メールをお送りします。届かない場合は迷惑メールフォルダもご確認ください。</div>
+  </form>
+
+  <div id="thanks">
+    <h2>お申し込みありがとうございます。</h2>
+    <p>受け付けました。日程・参加リンク・お支払い等のご案内を、追ってメールでお送りします。<br>当日、お会いできるのを楽しみにしています。</p>
+    <p style="margin-top:18px"><a href="index.html">&larr; ワークショップの詳細にもどる</a></p>
+  </div>
+</main>
+
+<footer>
+  <div class="fb">Oxymoron</div>
+  <div>まだ名前のない物語が立ち上がる、ともにある。</div>
+</footer>
+
+<script>
+  // ▼▼▼ ここに Apps Script ウェブアプリの URL（/exec で終わるもの）を貼ると、回答がスプレッドシートに保存されます ▼▼▼
+  var WEBAPP_URL = "REPLACE_WITH_WEBAPP_URL";
+  // ▲▲▲
+
+  function toggleKubun(){
+    var v = document.querySelector('input[name=kubun]:checked');
+    var corp = document.getElementById('corpBlock');
+    var indiv = document.getElementById('indivBlock');
+    var isCorp = v && v.value.indexOf('法人') === 0;
+    var isIndiv = v && v.value.indexOf('個人') === 0;
+    corp.classList.toggle('on', isCorp);
+    indiv.classList.toggle('on', isIndiv);
+    var c = document.querySelector('input[name=company]');
+    if(c){ c.required = isCorp; }
+  }
+
+  document.getElementById('applyForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var form = e.target;
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    var btn = document.getElementById('submitBtn');
+    btn.disabled = true; btn.textContent = '送信中…';
+
+    var data = new URLSearchParams(new FormData(form));
+
+    if(WEBAPP_URL.indexOf('REPLACE_') === 0){
+      alert('送信先（データの受け皿）がまだ設定されていません。準備中です。');
+      btn.disabled = false; btn.textContent = 'この内容で申し込む';
+      return;
+    }
+    fetch(WEBAPP_URL, { method:'POST', mode:'no-cors', body:data })
+      .then(function(){
+        document.getElementById('applyForm').style.display='none';
+        document.getElementById('thanks').style.display='block';
+        window.scrollTo({top:0,behavior:'smooth'});
+      })
+      .catch(function(){
+        alert('送信に失敗しました。お手数ですが時間をおいて再度お試しください。');
+        btn.disabled = false; btn.textContent = 'この内容で申し込む';
+      });
+  });
+</script>
+</body>
+</html>
