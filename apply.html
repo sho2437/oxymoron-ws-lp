@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
@@ -86,7 +86,7 @@
       <h2>基本情報</h2>
       <div class="field"><label class="q">お名前<span class="req">必須</span></label><input type="text" name="name" required></div>
       <div class="field"><label class="q">お名前（ふりがな）</label><input type="text" name="kana"></div>
-      <div class="field"><label class="q">メールアドレス<span class="req">必須</span></label><input type="email" name="email" required><div class="hint">日程・参加リンク・各種ご連絡をお送りします。</div></div>
+      <div class="field"><label class="q">メールアドレス<span class="req">必須</span></label><input type="email" name="email" required><div class="hint">日程・各種ご連絡をお送りします。</div></div>
       <div class="field"><label class="q">役職・職種</label><input type="text" name="role"></div>
       <div class="field"><label class="q">携帯電話番号（当日の緊急連絡用）</label><input type="tel" name="tel"></div>
     </div>
@@ -114,19 +114,6 @@
           </div>
         </div>
         <div class="field"><label class="q">書類の宛名（ご希望の表記）</label><input type="text" name="invoice_name"><div class="hint">会社名・部署名、または個人名。立替精算で会社名の領収書が必要な方もこちらに。</div></div>
-        <div class="field"><label class="q">お支払い方法</label>
-          <div class="opts">
-            <label class="opt"><input type="radio" name="pay_corp" value="請求書払い（後日銀行振込）"><span>請求書払い（後日、銀行振込）</span></label>
-            <label class="opt"><input type="radio" name="pay_corp" value="事前銀行振込"><span>事前に銀行振込</span></label>
-            <label class="opt"><input type="radio" name="pay_corp" value="その他"><span>その他（備考に記入）</span></label>
-          </div>
-        </div>
-        <div class="field"><label class="q">適格請求書（インボイス／登録番号の記載）</label>
-          <div class="opts">
-            <label class="opt"><input type="radio" name="invoice_qualified" value="必要"><span>必要</span></label>
-            <label class="opt"><input type="radio" name="invoice_qualified" value="不要"><span>不要</span></label>
-          </div>
-        </div>
         <div class="field"><label class="q">請求に関する備考</label><textarea name="corp_note" placeholder="送付先メール・締め支払い条件など"></textarea></div>
       </div>
 
@@ -139,13 +126,7 @@
           </div>
         </div>
         <div class="field"><label class="q">領収書の宛名（ご希望の表記）</label><input type="text" name="receipt_name"></div>
-        <div class="field"><label class="q">お支払い方法</label>
-          <div class="opts">
-            <label class="opt"><input type="radio" name="pay_indiv" value="事前銀行振込"><span>事前に銀行振込</span></label>
-            <label class="opt"><input type="radio" name="pay_indiv" value="その他"><span>その他（備考に記入）</span></label>
-          </div>
-        </div>
-        <div class="field"><label class="q">お支払いに関する備考</label><textarea name="indiv_note"></textarea></div>
+        
       </div>
     </div>
 
@@ -252,7 +233,7 @@
 
   <div id="thanks">
     <h2>お申し込みありがとうございます。</h2>
-    <p>受け付けました。日程・参加リンク・お支払い等のご案内を、追ってメールでお送りします。<br>当日、お会いできるのを楽しみにしています。</p>
+    <p>受け付けました。日程・お支払い等のご案内を、追ってメールでお送りします。<br>当日、お会いできるのを楽しみにしています。</p>
     <p style="margin-top:18px"><a href="index.html">&larr; ワークショップの詳細にもどる</a></p>
   </div>
 </main>
