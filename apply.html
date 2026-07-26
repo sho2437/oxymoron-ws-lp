@@ -73,7 +73,7 @@
   <div class="inner">
     <div class="kicker">APPLICATION ｜ お申し込み</div>
     <h1>AI×対話型組織開発<br>1日ワークショップ</h1>
-    <div class="price">モニター価格（税込）：<br><b>法人 45,000円</b> ／ <b>個人 25,000円</b></div>
+    <div class="price">モニター価格（税込）：<b>45,000円</b></div>
     <div class="mon">定員20名程度でのモニター開催です。終了後にヒアリングなどをお願いする場合があり、その際はご協力いただけますようお願いしております。</div>
   </div>
 </header>
@@ -94,11 +94,11 @@
     <!-- 区分 -->
     <div class="sec">
       <h2>お申し込み区分</h2>
-      <div class="desc">最終的に費用を負担するのが「会社」か「自分」かで選んでください。立て替えて会社で精算する場合も<b>法人（会社費用）</b>です。</div>
+      <div class="desc">参加費は一律ですが、請求書・領収書のご準備のためにお伺いします。最終的に費用を負担するのが「会社」か「自分」かで選んでください。立て替えて会社で精算する場合も<b>法人（会社費用）</b>です。</div>
       <div class="field">
         <div class="opts">
-          <label class="opt"><input type="radio" name="kubun" value="法人（会社費用）" required onchange="toggleKubun()"><span>法人（会社の費用で参加）／ <b>45,000円</b></span></label>
-          <label class="opt"><input type="radio" name="kubun" value="個人（自己負担）" onchange="toggleKubun()"><span>個人（自己負担で参加）／ <b>25,000円</b></span></label>
+          <label class="opt"><input type="radio" name="kubun" value="法人（会社費用）" required onchange="toggleKubun()"><span>法人（会社の費用で参加）</span></label>
+          <label class="opt"><input type="radio" name="kubun" value="個人（自己負担）" onchange="toggleKubun()"><span>個人（自己負担で参加）</span></label>
         </div>
       </div>
 
@@ -112,6 +112,7 @@
             <label class="opt"><input type="radio" name="invoice" value="領収書（立替・経費精算）"><span>領収書（本人が立て替えて経費精算する場合）</span></label>
             <label class="opt"><input type="radio" name="invoice" value="不要"><span>不要</span></label>
           </div>
+          <div class="hint">当方は免税事業者のため、発行する請求書・領収書は登録番号のない（適格請求書ではない）形式となります。</div>
         </div>
         <div class="field"><label class="q">書類の宛名（ご希望の表記）</label><input type="text" name="invoice_name"><div class="hint">会社名・部署名、または個人名。立替精算で会社名の領収書が必要な方もこちらに。</div></div>
         <div class="field"><label class="q">請求に関する備考</label><textarea name="corp_note" placeholder="送付先メール・締め支払い条件など"></textarea></div>
