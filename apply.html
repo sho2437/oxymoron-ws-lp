@@ -91,44 +91,19 @@
       <div class="field"><label class="q">携帯電話番号（当日の緊急連絡用）</label><input type="tel" name="tel"></div>
     </div>
 
-    <!-- 区分 -->
+    <!-- 領収書・請求書 -->
     <div class="sec">
-      <h2>お申し込み区分</h2>
-      <div class="desc">参加費は一律ですが、請求書・領収書のご準備のためにお伺いします。最終的に費用を負担するのが「会社」か「自分」かで選んでください。立て替えて会社で精算する場合も<b>法人（会社費用）</b>です。</div>
-      <div class="field">
+      <h2>領収書・請求書について</h2>
+      <div class="desc">参加費は一律です。ご希望に応じて領収書・請求書を発行します。当方は免税事業者のため、登録番号のない（適格請求書ではない）形式となります。</div>
+      <div class="field"><label class="q">領収書の発行</label>
         <div class="opts">
-          <label class="opt"><input type="radio" name="kubun" value="法人（会社費用）" required onchange="toggleKubun()"><span>法人（会社の費用で参加）</span></label>
-          <label class="opt"><input type="radio" name="kubun" value="個人（自己負担）" onchange="toggleKubun()"><span>個人（自己負担で参加）</span></label>
+          <label class="opt"><input type="radio" name="receipt" value="必要"><span>必要</span></label>
+          <label class="opt"><input type="radio" name="receipt" value="不要"><span>不要</span></label>
         </div>
       </div>
+      <div class="field"><label class="q">領収書の宛名（「必要」の方）</label><input type="text" name="receipt_name"><div class="hint">領収書に記載したい宛名（お名前・会社名など）をご記入ください。ご指定がなければ、お申し込み時のお名前で発行します。</div></div>
+      <div class="field"><label class="q">備考・請求書をご希望の場合</label><textarea name="corp_note" placeholder="請求書をご希望の場合は、その旨と、宛名・送付先メール・締め／支払い条件などをご記入ください。"></textarea></div>
 
-      <!-- 法人ブロック -->
-      <div class="branch" id="corpBlock">
-        <div class="field"><label class="q">会社名・団体名</label><input type="text" name="company"></div>
-        <div class="field"><label class="q">部署名</label><input type="text" name="dept"></div>
-        <div class="field"><label class="q">必要な書類</label>
-          <div class="opts">
-            <label class="opt"><input type="radio" name="invoice" value="請求書"><span>請求書</span></label>
-            <label class="opt"><input type="radio" name="invoice" value="領収書（立替・経費精算）"><span>領収書（本人が立て替えて経費精算する場合）</span></label>
-            <label class="opt"><input type="radio" name="invoice" value="不要"><span>不要</span></label>
-          </div>
-          <div class="hint">当方は免税事業者のため、発行する請求書・領収書は登録番号のない（適格請求書ではない）形式となります。</div>
-        </div>
-        <div class="field"><label class="q">書類の宛名（ご希望の表記）</label><input type="text" name="invoice_name"><div class="hint">会社名・部署名、または個人名。立替精算で会社名の領収書が必要な方もこちらに。</div></div>
-        <div class="field"><label class="q">請求に関する備考</label><textarea name="corp_note" placeholder="送付先メール・締め支払い条件など"></textarea></div>
-      </div>
-
-      <!-- 個人ブロック -->
-      <div class="branch" id="indivBlock">
-        <div class="field"><label class="q">領収書の発行</label>
-          <div class="opts">
-            <label class="opt"><input type="radio" name="receipt" value="必要"><span>領収書が必要</span></label>
-            <label class="opt"><input type="radio" name="receipt" value="不要"><span>不要</span></label>
-          </div>
-        </div>
-        <div class="field"><label class="q">領収書の宛名（ご希望の表記）</label><input type="text" name="receipt_name"></div>
-        
-      </div>
     </div>
 
     <!-- あなたについて -->
@@ -251,17 +226,6 @@
   var WEBAPP_URL = "https://script.google.com/macros/s/AKfycbyJ2uk_b84_0YbDrhfkm-EMfZKCVJZeMT9-4ywAf4akWV1JM2g7MmoBQeCirWYnzfkN/exec";
   // ▲▲▲
 
-  function toggleKubun(){
-    var v = document.querySelector('input[name=kubun]:checked');
-    var corp = document.getElementById('corpBlock');
-    var indiv = document.getElementById('indivBlock');
-    var isCorp = v && v.value.indexOf('法人') === 0;
-    var isIndiv = v && v.value.indexOf('個人') === 0;
-    corp.classList.toggle('on', isCorp);
-    indiv.classList.toggle('on', isIndiv);
-    var c = document.querySelector('input[name=company]');
-    if(c){ c.required = isCorp; }
-  }
 
   document.getElementById('applyForm').addEventListener('submit', function(e){
     e.preventDefault();
